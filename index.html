@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Budget Tracker</h1>
+    
+    <div class="budget-section">
+      <label for="daily-budget">Enter Daily Budget:</label>
+      <input type="number" id="daily-budget" placeholder="Enter daily budget">
+      <button id="set-budget">Set Budget</button>
+    </div>
+
+    <div class="expense-section">
+      <h2>Add Expense</h2>
+      <label for="expense-name">Expense Name:</label>
+      <input type="text" id="expense-name" placeholder="Expense name">
+      <label for="expense-amount">Amount:</label>
+      <input type="number" id="expense-amount" placeholder="Expense amount">
+      <button id="add-expense">Add Expense</button>
+    </div>
+
+    <div class="summary-section">
+      <h2>Summary</h2>
+      <p>Remaining Budget: $<span id="remaining-budget">0.00</span></p>
+      <p>Today's Savings: $<span id="savings">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
